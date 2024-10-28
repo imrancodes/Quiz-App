@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="questions.css" />
+    <link rel="stylesheet" href="result.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inika:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="start-section">
+        <main class="start-page">
+            <img src="images/quiz-time.png" alt="Quiz Time" class="quiz-time" />
+            <button class="start-now">Start Now > > ></button>
+        </main>
+        <p class="highest-score">Highest Score: 20/25</p>
+        <p class="footer">Made with ❤️ by Imran Khan</p>
+    </section>
+
+    <section class="questions-section">
+        <div class="question-main">
+            <div class="logo-sound">
+                <img src="images/quiz-time.png" alt="Quiz logo" />
+                <audio autoplay loop src="timer-audio.mp3"></audio>
+                <div class="sound">
+                    <i class="ri-volume-up-fill sound-on"></i>
+                    <i class="ri-volume-mute-fill sound-off"></i>
+                </div>
+            </div>
+            <div class="question-no-container">
+                <div class="question-no">
+                    <p>02/25</p>
+                </div>
+            </div>
+            <div class="question">
+                <p>Inside which HTML element do we put the JavaScript?</p>
+            </div>
+            <div class="timer-container">
+                <div class="timer">
+                    <p>00:30</p>
+                </div>
+            </div>
+            <div class="options-container">
+                <div class="option-1 options">
+                    <p class="options-text">js Tag</p>
+                    <div class="responses">
+                        <p class="your-choice seleted">You choose</p>
+                        <i class="ri-close-circle-fill wrong-icon"></i>
+                        <i class="ri-checkbox-circle-fill correct-icon"></i>
+                    </div>
+                </div>
+                <div class="option-2 options">
+                    <p class="options-text">scripting Tag</p>
+                    <div class="responses">
+                        <p class="your-choice seleted">You choose</p>
+                        <i class="ri-close-circle-fill wrong-icon"></i>
+                        <i class="ri-checkbox-circle-fill correct-icon"></i>
+                    </div>
+                </div>
+                <div class="option-3 options">
+                    <p class="options-text">javascript Tag</p>
+                    <div class="responses">
+                        <p class="your-choice seleted">You choose</p>
+                        <i class="ri-close-circle-fill wrong-icon"></i>
+                        <i class="ri-checkbox-circle-fill correct-icon"></i>
+                    </div>
+                </div>
+                <div class="option-4 options">
+                    <p class="options-text">script Tag</p>
+                    <div class="responses">
+                        <p class="your-choice seleted">You choose</p>
+                        <i class="ri-close-circle-fill wrong-icon"></i>
+                        <i class="ri-checkbox-circle-fill correct-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="next-question-link">
+                <button class="next-question">Next ></button>
+            </div>
+            <p class="footer">Made with ❤️ by Imran Khan</p>
+        </div>
+    </section>
+
+    <section class="result-section">
+        <div class="result-container">
+            <img src="images/quiz-time.png" alt="Quiz Logo" />
+            <p class="result-tag">Result</p>
+            <div class="result-bar">
+                <div class="correct-bar"></div>
+            </div>
+            <p class="result-no">22/25</p>
+            <p class="quote">“Keep learning, you have a good score!”</p>
+            <button class="retry-btn">
+                < < < Retry </button>
+        </div>
+        <p class="footer">Made with ❤️ by Imran Khan</p>
+
+        <script src="questions.js" defer></script>
+        <script src="script.js" defer></script>
+    </body>
+</body>
+
+</html>
